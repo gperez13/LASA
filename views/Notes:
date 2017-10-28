@@ -1,0 +1,45 @@
+Notes:
+
+
+
+cxreate two databases. Submissions go to the Admin page where they are deleted or pushed into the viewable database(and rendered on the home page). The post is then. deleted from the Admin db
+
+
+
+Add a req.session.views++ that will update the site's view hits
+
+
+
+In total we need separate databases to:
+
+-host submissions and render them on the Admin page
+-Host approved submissions to render in the Content screen
+-Host the  page views and maybe track user movement through cookies?
+
+
+
+We need the following ejs views:
+
+Home- An explenation of the site and disclaimer information(maybe we can fabricate a way to force users to sign off on disclaimers before viewing content much like an alcohol site)
+
+
+Content(best Practices)- Blog content. We need to figure out how to handle multiple pages so that our best practices don't overwhelm the client. Additionally, consider an endless scroll page much like facebook so that users don't have to click through pages. However, this might not be good for users who are searchng for a specific piece or their own. This may need to be rewerked if we are goinbg to develop a mobile app
+
+
+Contribute Page- more disclaimers and an entry interphase. We need to encrypt the submissions and remove metadata
+
+About- Mission, vision, goals
+
+
+
+
+
+
+*****   Hosting a server  ****
+*****   Metadata.       ****
+*****   Registering trademark and copyright  ****
+*****   Twitter Api? Perhaps our Admin page can also post these 				comments as tweets too. Maybe create an additional view for 			this that contains already approved content  ****
+
+
+
+
